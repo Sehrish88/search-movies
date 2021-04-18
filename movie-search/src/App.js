@@ -1,12 +1,15 @@
-import React from 'react';
-import { Typography, AppBar, Card, CardActions, CardContent, CardMedia, CssBaseline, Grid, Toolbar, Container  } from '@material-ui/core';                                                           
+import { CssBaseline } from '@material-ui/core';
 
-const App = () => {
-    return (
-        <div>
-            <Typography variant="h2">Search For Movies</Typography>
-        </div>
-    )
-}
+import { Layout } from './Layout';
+import { LandingPage } from './modules/landing-page/LandingPage';
 
-export default App; 
+export const App = () => {
+  return (
+    <>
+      <CssBaseline />
+      <Layout>
+        <LandingPage />
+      </Layout>
+    </>
+  );
+};
